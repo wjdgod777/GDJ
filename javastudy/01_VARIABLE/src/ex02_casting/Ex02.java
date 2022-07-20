@@ -11,10 +11,12 @@ public class Ex02 {
 		
 		int score = 256;
 		byte realScore = (byte)score;
+		
 		System.out.println(realScore);
 		
 		double grade = 4.5;
 		int realGrade = (int)grade;
+		
 		System.out.println(realGrade);	// 소수점은 항상 잘려 나간다.
 
 	}

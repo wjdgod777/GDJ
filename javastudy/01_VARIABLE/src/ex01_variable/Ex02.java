@@ -11,6 +11,7 @@ public class Ex02 {
 		
 		String country = "korea"; // 자바가 쉬운 사용법을 지원
 		String name = new String("민경태"); // 원래 사용법
+		
 		System.out.println(country);
 		System.out.println(name);
 

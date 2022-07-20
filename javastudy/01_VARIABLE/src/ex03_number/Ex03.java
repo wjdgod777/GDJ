@@ -5,6 +5,7 @@ public class Ex03 {
 	public static void main(String[] args) {
 		// 대입 연산
 		int score = 100; //등호(=)가 대입 연산자이다.
+		
 		System.out.println(score);
 		
 		// 연습
@@ -16,6 +17,7 @@ public class Ex03 {
 		temp = x;
 		x = y;
 		y = temp;
+		
 		System.out.println(x);
 		System.out.println(y);
 		
@@ -25,6 +27,7 @@ public class Ex03 {
 		wallet = wallet + 5000;
 		wallet += 5000;	// wallet = wallet + 5000;
 		wallet -= 3000;	// wallet = wallet - 3000;
+		
 		System.out.println(wallet);
 		
 		// 연습
@@ -32,6 +35,7 @@ public class Ex03 {
 		long balance = 10000;
 		balance *= 1.05;	// balance를 double로 promotion해서 처리한다.
 		balance += (balance * 0.05);
+		
 		System.out.println(balance);
 		
 		// balance = balance * 1.05; 실패, balance * 1.05 결과는 double이기 때문에 long balance에 저장할 수 없다.

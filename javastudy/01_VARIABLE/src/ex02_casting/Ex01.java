@@ -11,10 +11,12 @@ public class Ex01 {
 		// 정수를 실수로 변환될 때 자동으로 진행된다.
 		
 		long money = 10000; // 4바이트에 저장된 10000이 8바이트로 promotion된다.
+		
 		System.out.println(money);
 		
 		int score = 100;
 		double realScore = score;	// 4바이트 int가 8바이트 double로 promotion된다.
+		
 		System.out.println(realScore);
 		
 

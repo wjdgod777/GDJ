@@ -13,6 +13,7 @@ public class Ex02 {
 		// 변수 a의 값을 1 증가시키고 사용한다.
 		int a = 1;
 		int b = ++a;
+	
 		System.out.println(a);
 		System.out.println(b);
 		
@@ -21,6 +22,7 @@ public class Ex02 {
 		// 변수 a의 값을 사용하고나서 1 증가시킨다.
 		int x = 1;
 		int y = x++;
+		
 		System.out.println(x);
 		System.out.println(y);
 		
@@ -28,6 +30,7 @@ public class Ex02 {
 		int i = 1;
 		int j = 1;
 		int result = i++ + --j;		
+		
 		System.out.println(i);	//2
 		System.out.println(j);	//0
 		System.out.println(result);	//1

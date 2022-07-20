@@ -22,6 +22,7 @@ public class Ex03 {
 		// 100 -> "100", 4.5 -> "4.5"
 		int age = 100;
 		String strAge = String.valueOf(age);
+		
 		System.out.println(strAge);
 		
 	}

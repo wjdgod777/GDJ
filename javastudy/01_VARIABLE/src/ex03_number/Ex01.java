@@ -25,6 +25,7 @@ public class Ex01 {
 		// 힌트
 		// 7.0 나누기 2.0은 3.5이다.
 		double result = (double)a / b;	// 3.5
+		
 		System.out.println(result);
 		
 		// 연습
@@ -32,6 +33,7 @@ public class Ex01 {
 		int n = 25;
 		int ten = n / 10;	// 2
 		int one = n % 10;	// 5
+		
 		System.out.println(ten);
 		System.out.println(one);
 		
@@ -40,6 +42,7 @@ public class Ex01 {
 		int second = 90;
 		int m = second / 60;	// 1
 		int s = second % 60;	// 30
+		
 		System.out.println(m);
 		System.out.println(s);
 		

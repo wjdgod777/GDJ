@@ -28,6 +28,7 @@ public class Ex01 {
 		// 논리 타입 - is****는 웬만하면 boolean 타입(암묵적)
 		boolean isGood = true;
 		boolean isAlive = false;
+		
 		System.out.println(isGood);
 		System.out.println(isAlive);
 		
@@ -38,6 +39,7 @@ public class Ex01 {
 		char ch4 = '\t'; // 탭
 		char ch5 = '\''; // 작은 따옴표
 		char ch6 = '\"'; // 큰 따옴표
+		
 		System.out.println(ch1);
 		System.out.println(ch2);
 		System.out.println(ch3);
@@ -48,12 +50,14 @@ public class Ex01 {
 		// 정수 타입
 		int score = 100;
 		long view = 10000000000L; // long 타입의 값은 마지막에 L 또는 l을 추가해야 한다.
+		
 		System.out.println(score);
 		System.out.println(view);
 		
 		// 실수 타입
 		double discount = 0.5;
 		double pi = 3.1415926535;
+		
 		System.out.println(discount);
 		System.out.println(pi);
 		
