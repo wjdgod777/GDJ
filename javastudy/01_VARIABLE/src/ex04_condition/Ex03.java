@@ -8,7 +8,6 @@ public class Ex03 {
 		// 조건을 만족하는 경우와 그렇지 않은 경우 모두를 처리하는 연산자
 		// 형식
 		// ┗조건 ? 만족하는 경우 : 만족하지 않는 경우
-		
 		int score1 = 100;
 		String result1 = (score1 >= 60) ? "합격" : "불합격";
 		System.out.println(result1);
@@ -20,7 +19,6 @@ public class Ex03 {
 		// 연습
 		// 순위가 1이면 "금메달", 순위가 2이면 "은메달", 순위가 3이면 "동메달"
 		// 나머지 순위는 "없음"
-		
 		int rank = 1;
 		String medal = (rank == 1) ? "금메달" : (rank == 2) ? "은메달" : (rank == 3) ? "동메달" : "없음";
 		;System.out.println(medal);

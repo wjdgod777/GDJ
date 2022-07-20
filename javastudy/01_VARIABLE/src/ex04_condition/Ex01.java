@@ -13,7 +13,6 @@ public class Ex01 {
 		// 다르다 : !=(≠표시로 자동변환될 경우도 있음ㄷ)
 		// 연산 결과는 boolean(true,false)
 		// 항상 등호는 뒤에 붙음 Ex)□=
-		
 		int a = 7;
 		int b = 2;
 		

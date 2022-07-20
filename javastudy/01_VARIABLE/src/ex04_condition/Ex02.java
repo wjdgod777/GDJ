@@ -8,7 +8,6 @@ public class Ex02 {
 		// 논리 AND : &&, 모두 true면 true/하나라도 false이면 false
 		// 논리 OR	: ||, 하나라도 true면 true/모두 false이면 false
 		// 논리 NOT	: ! , true는 false/false는 true
-		
 		int a = 10;
 		int b = 10;
 		
