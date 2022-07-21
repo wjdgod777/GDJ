@@ -38,7 +38,7 @@ public class Ex04_switch {
 		case 4 : manager = "한지민"; break;
 		case 5 :
 		case 6 : manager = "박은빈"; break;
-		default : manager = "이지은";
+		default: manager = "이지은";
 		}
 		System.out.println(floor + "층의 관리자는 " + manager + "입니다.");
 		System.out.println();
@@ -106,7 +106,8 @@ public class Ex04_switch {
 		}
 		
 		System.out.println(level + "등급의 권한은 \"" + right +"\"입니다.");
-	
+		System.out.println();
+		
 		/* int level = 3;
 		String right;	// 권한
 		switch(level) {
@@ -118,7 +119,38 @@ public class Ex04_switch {
 		
 		System.out.println(level + "등급의 권한은 \"" + right +"\"입니다."); */
 		
+		double birth = 1;
+		int finalPeople = 82;
+		// double statistics= 0;
 		
+		
+		for(int people = 2; finalPeople >= people; people++) {
+			// 2명	1-(364/365)
+			// 3명	1-(364/365)*(363/365)  -> 1 - (364*363)/(365*365)
+			// 4명	1-(364/365)*(363/365)*(362/365)
+			// 1 = 1 - (365-n+1)/365*(n-1);
+			// 2 = 1 - (365-n+1)/365*(n-1) * (365-n+1)/365*(n-1); 
+			// statistics *= 
+			// 1 - ((365 - n + 1) + (365 -
+			// birth *= (10d - people)/2;
+			// birth *= 10;
+			birth *= (365d - people + 1)/365d;
+		} System.out.println(birth*100);
+		double result = (1 - birth)*100;
+		System.out.print(finalPeople + "명의 생일이 같을 확률은 ");
+		System.out.printf("%.2f", result);
+		System.out.print("%입니다.");
+		
+		// System.out.println("생일이 같을 확률은 " + result +"입니다.");
+		System.out.println();
+		
+		/* int a = 1;
+		int b = 4;
+		for(int c = 1; c <= b; c++) {
+			a *= c;
+		} System.out.println(a); */
+		
+		//let met
 	}
 
 }
