@@ -1,6 +1,6 @@
 package ex01_branch;
 
-public class Ex04_switch {
+public class Ex04_Switch {
 
 	public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package ex02_loop;
 
-public class Ex05_nested_for {
+public class Ex05_Nested_For {
 
 	public static void main(String[] args) {
 		

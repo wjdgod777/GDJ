@@ -1,6 +1,6 @@
 package ex02_loop;
 
-public class Ex01_for {
+public class Ex01_For {
 
 	public static void main(String[] args) {
 		

@@ -1,6 +1,6 @@
 package ex02_loop;
 
-public class Ex02_while {
+public class Ex02_While {
 
 	public static void main(String[] args) {
 		

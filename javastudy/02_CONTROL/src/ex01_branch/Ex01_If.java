@@ -1,6 +1,6 @@
 package ex01_branch;
 
-public class Ex01_if {
+public class Ex01_If {
 
 	public static void main(String[] args) {
 		

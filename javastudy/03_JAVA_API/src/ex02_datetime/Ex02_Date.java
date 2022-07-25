@@ -17,7 +17,7 @@ public class Ex02_Date {
 		// java.util 패키지의 Date 클래스
 		// 1. java.util.date
 		// 2. import java.util.date;
-		//	  Date(Ctrl+Alt 후 java.util 찾아 클릭하기)
+		//	  Date(Ctrl+Enter 후 java.util 찾아 클릭하기)
 		
 		//////////////////////////////////////////////////////
 		

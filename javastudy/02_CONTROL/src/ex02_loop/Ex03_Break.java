@@ -1,6 +1,6 @@
 package ex02_loop;
 
-public class Ex03_break {
+public class Ex03_Break {
 
 	public static void main(String[] args) {
 		
