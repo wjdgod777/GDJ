@@ -44,15 +44,18 @@ public class Ex04_Calendar {
 		int second = cal.get(Calendar.SECOND);		// 초(0 ~ 59)
 		
 		switch(ampm) {
-		case 0 : System.out.println("오전 "); break;
-		case 1 : System.out.println("오후 "); break;
+		case 0 : System.out.print("오전 "); break;
+		case 1 : System.out.print("오후 "); break;
 		}
-		System.out.println(hour12 + "시(12시기준) " + minute + "분 " + second + "초");
-		System.out.println(hour24 + "시(24시기준) " + minute + "분 " + second + "초");
+		System.out.println(hour12 + "시 " + minute + "분 " + second + "초");
+		System.out.println(hour24 + "시 " + minute + "분 " + second + "초");
 		
 		// timestamp
-		long timestamp = cal.getTimeInMillis();
+		long timestamp1 = cal.getTimeInMillis();
+		System.out.println(timestamp1);
+		long timestamp = System.currentTimeMillis();
 		System.out.println(timestamp);
+		System.out.println();
 		
 		
 		}

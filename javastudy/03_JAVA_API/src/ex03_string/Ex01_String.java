@@ -94,6 +94,7 @@ public class Ex01_String {
 		} else {
 			System.out.println("우씨가 아닙니다.");
 		} System.out.println();
+//		System.out.println(name.startsWith("우") ? "우씨입니다." : "우씨가 아닙니다.");
 		
 		// 8. 문자열이 특정 패턴으로 끝나는지 여부를 boolean(true, false) 반환
 		//    endWith(문자열)
@@ -124,10 +125,10 @@ public class Ex01_String {
 		System.out.println();
 		
 		// 11. 대소문자 변환하기
-		//     toUpperCase() : 대문자로 변환하기
-		//     toLowerCase() : 소문자로 변환하기
+//		     toUpperCase() : 대문자로 변환하기
+//		     toLowerCase() : 소문자로 변환하기
 		
-		String source = "best of best";
+		String source = "Best Of Best";
 		System.out.println(source.toUpperCase());
 		System.out.println(source.toLowerCase());
 		System.out.println();
@@ -135,7 +136,7 @@ public class Ex01_String {
 		// 12. 찾아 바꾸기
 		//     replace(old, new) : old를 new로 변환하기
 		
-		String replaced = source.replace("best", "worst");
+		String replaced = source.replace("Best", "Worst");
 		System.out.println(source);
 		System.out.println(replaced);
 		System.out.println();

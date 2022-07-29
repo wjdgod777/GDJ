@@ -47,7 +47,6 @@ public class Ex02_StringBuilder {
 			sbCode.append((char)((int)(Math.random() * 26) + 'A'));
 		}
 		
-		
 		String code = sbCode.toString();
 		System.out.println("인증코드 : " + code);
 		
@@ -60,6 +59,6 @@ public class Ex02_StringBuilder {
 		String paging = sbPaging.toString();
 		System.out.println(paging);
 		
-	}
+		}
 
 }
