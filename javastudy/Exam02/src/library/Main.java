@@ -7,7 +7,7 @@ public class Main {
 		Library library = new Library();
 		library.manage();
 		
-		// new Library().manage();
+//		new Library().manage();
 
 	}
 
