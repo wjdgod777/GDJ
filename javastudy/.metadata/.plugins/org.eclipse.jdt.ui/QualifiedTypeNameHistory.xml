@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="ex09_this.School"/>
-    <fullyQualifiedTypeName name="ex09_this.Student"/>
-    <fullyQualifiedTypeName name="practice.Watch"/>
-    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
-    <fullyQualifiedTypeName name="practice_BankAccount.BankAccount"/>
-    <fullyQualifiedTypeName name="practice_Soldier.Soldier"/>
-    <fullyQualifiedTypeName name="sun.jvm.hotspot.tools.SysPropsDumper"/>
-    <fullyQualifiedTypeName name="ex05_constructor.Student"/>
-    <fullyQualifiedTypeName name="ex06_constructor.Student"/>
-    <fullyQualifiedTypeName name="ex07_override.Espresso"/>
     <fullyQualifiedTypeName name="ex07_override.Americano"/>
     <fullyQualifiedTypeName name="ex07_override.CafeLatte"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
@@ -31,7 +21,6 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="library.Library"/>
     <fullyQualifiedTypeName name="library.Book"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="ex15_interface.SmartPhone"/>
     <fullyQualifiedTypeName name="ex16_interface.Dog"/>
     <fullyQualifiedTypeName name="ex16_interface.Cat"/>
@@ -49,15 +38,26 @@
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="quiz01_updown.UpDownGame"/>
-    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="javax.management.RuntimeMBeanException"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.ToString"/>
     <fullyQualifiedTypeName name="parking.ParkingLot"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="lombok.Setter"/>
     <fullyQualifiedTypeName name="leejunghangbabo.Hang"/>
+    <fullyQualifiedTypeName name="com.sun.tools.jdeprscan.scan.Scan"/>
+    <fullyQualifiedTypeName name="ex05_throws.Car"/>
+    <fullyQualifiedTypeName name="ex06_exception_class.MyException"/>
+    <fullyQualifiedTypeName name="ex06_exception_class.ParkingLot"/>
+    <fullyQualifiedTypeName name="ex06_exception_class.Car"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="quiz03_bank.BankException"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="quiz04_employee.EmployeeException"/>
+    <fullyQualifiedTypeName name="quiz04_employee.Company"/>
+    <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
