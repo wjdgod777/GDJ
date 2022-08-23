@@ -12,6 +12,10 @@ public class Main {
 			String[] hobbies = new String[3];
 			hobbies[1] = "swimming";
 			hobbies[2] = "running";
+			for(int i = 0; i < hobbies.length; i++) {
+				System.out.println(hobbies[i]);
+			}
+			System.out.println(hobbies);
 			for(String hobby : hobbies) {
 				System.out.println(hobby.substring(0, 2));
 			}
@@ -72,7 +76,7 @@ public class Main {
 	} 
 	
 	public static void main(String[] args) {
-		m4();
+		m2();
 	}
 
 }
