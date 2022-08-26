@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98903C42-1981-06CE-6CD1-398A22212B9B" schemaObject="C272C8B6-72DB-90A0-4146-2A43BA514311" name="SCHEDULE">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<importedID>3F974750-FB2A-3D62-79FA-A5E1BD571195</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="S_NO" id="21C3F05F-DB1B-DBCF-1E7F-C98C3014B623">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<importedID>44578430-2239-BB9B-8958-B654D4AEE166</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="N_CODE" id="9DF1B48B-2448-D1D4-EE46-AABAE52D6653">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<importedID>0E367781-7E04-BD04-6D13-D02AF702F55B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="955E406C-001C-6841-2050-AEF522888351" referredColumn="AD7656FB-6F3A-0504-188A-DAC98ABAE1D4"/>
+</associations>
+</Column>
+<Column name="E_CODE" id="2C4A4D95-19F5-FBF4-28A8-F0CB6ADA005B">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<importedID>CCDE6C3F-05B6-8921-70D6-2E64D8AC1920</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CAAEB4F0-F7CB-A193-8776-5E88ADB745F7" referredColumn="72AEDE64-DFA0-5929-DAC0-29EECA3E956D"/>
+</associations>
+</Column>
+<Column name="S_START_DATE" id="9A4F3910-E343-DFD3-CE1C-96C9E3831D73">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<importedID>CB14E7D0-7B64-50E8-CF87-DAC2B4194FBE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="S_END_DATE" id="5361A2FE-6F8C-F7DC-958A-5E1F6FA8A5C8">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<importedID>AD99FCC3-11DF-3F42-D405-1D1AFE8EDAE0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="S_INFO" id="CE05B40A-DA1C-CEED-9FAD-8C6E71F6D8B2">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<importedID>DF18731B-C38A-7469-ED74-E9D1B6B94DE4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BAF4EF1F-A810-B873-7EF0-61DBC06328CA" name="PK_SCHEDULE">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<importedID>FBB5621E-EF72-9B7D-B173-020E1D424057</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21C3F05F-DB1B-DBCF-1E7F-C98C3014B623"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B874780-4565-2460-1E59-0B8AC5D7201E" schemaObject="C272C8B6-72DB-90A0-4146-2A43BA514311" name="PK_SCHEDULE">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<importedID>D77F9109-854F-58AB-98EB-864FBF297FFA</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21C3F05F-DB1B-DBCF-1E7F-C98C3014B623"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="264C640D-857D-1939-FE5F-38F7199C993C" name="FK_SCHEDULE_EVENT">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C4A4D95-19F5-FBF4-28A8-F0CB6ADA005B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF336BAA-627A-142F-67C5-7F0C55DC200B" name="FK_SCHEDULE_NATION">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DF1B48B-2448-D1D4-EE46-AABAE52D6653"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

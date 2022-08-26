@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D807F432-678A-1818-C759-3A972D00B252" containerWithKeyObject="25EC82AB-EC0C-7E9C-EB4E-D19CEB91516F" localFKIndex="004117AA-B010-4FCD-C7C2-60EADCF2FD67" name="FK_PLAYER_EVENT">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<importedID>A986B257-AA70-4927-9945-D394BC046DE7</importedID>
+<referredTableLongName>SCOTT.EVENT</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>1F3504DB-05E2-357A-0B65-B0A49A7A691C</referredTableID>
+<keyObject>1DC157DC-1F2D-2AAD-3E33-791C0C1B25B9</keyObject>
+<referredKeyID>1DC157DC-1F2D-2AAD-3E33-791C0C1B25B9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>E_CODE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

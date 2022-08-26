@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EVENT" directorySegmentName="seg_0" id="1F3504DB-05E2-357A-0B65-B0A49A7A691C">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<schemaObject>C272C8B6-72DB-90A0-4146-2A43BA514311</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>AF817501-879D-B781-CF9E-20BB9A17D5D2</segment>
+<tableSpace>5CF1D772-B2AD-4B5F-B3DA-45E8EDE8C0DE</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="E_FIRST_YEAR" id="70853B1D-33F8-1A4B-5C3D-A75A6AA2ACF9">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="E_CODE" id="72AEDE64-DFA0-5929-DAC0-29EECA3E956D">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="E_INFO" id="CCEC74DC-0F81-77B9-9107-9A1A342C8179">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="E_NAME" id="EC9D4D6F-7F91-D18D-6B05-344FC74DD062">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_EVENT" id="7EEC3D2B-3552-5B99-C486-3DAA70DD41D0">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<schemaObject>C272C8B6-72DB-90A0-4146-2A43BA514311</schemaObject>
+<segment>500FF2EF-BE1C-D320-C36B-59B6EAC6F755</segment>
+<tableSpace>5CF1D772-B2AD-4B5F-B3DA-45E8EDE8C0DE</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_EVENT" id="1DC157DC-1F2D-2AAD-3E33-791C0C1B25B9">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<segment>500FF2EF-BE1C-D320-C36B-59B6EAC6F755</segment>
+<tableSpace>5CF1D772-B2AD-4B5F-B3DA-45E8EDE8C0DE</tableSpace>
+<existingIndex>7EEC3D2B-3552-5B99-C486-3DAA70DD41D0</existingIndex>
+<indexSegment>500FF2EF-BE1C-D320-C36B-59B6EAC6F755</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

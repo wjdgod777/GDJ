@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="BANK" directorySegmentName="seg_0" id="14F9FB8F-A215-1B80-A2A1-831231DE93F8">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<schemaObject>C272C8B6-72DB-90A0-4146-2A43BA514311</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>AF817501-879D-B781-CF9E-20BB9A17D5D2</segment>
+<tableSpace>5CF1D772-B2AD-4B5F-B3DA-45E8EDE8C0DE</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="BANK_CODE" id="040B8FD1-5EC4-4BCB-50DC-B90F21B62963">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BANK_PHONE" id="2193AB9B-FFAC-3658-35A3-DAC13B92A565">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BANK_NAME" id="DB6161D6-C87D-FA7B-1879-37C5445670A1">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

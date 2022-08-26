@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CUSTOMER" directorySegmentName="seg_0" id="B4124FA5-8AC9-F84A-73E3-429FB54A9C95">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<schemaObject>C272C8B6-72DB-90A0-4146-2A43BA514311</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>AF817501-879D-B781-CF9E-20BB9A17D5D2</segment>
+<tableSpace>5CF1D772-B2AD-4B5F-B3DA-45E8EDE8C0DE</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="BANK_CODE" id="07D679C6-DC5D-1A9C-F763-5BAC70210F3B">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUST_NO" id="3664B369-1590-99BC-82BA-1593BDCC3BD3">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUST_AGE" id="D853A45A-2ECD-037E-8486-58D7B3C3F976">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUST_NAME" id="E12797C6-808A-59B8-E1EB-3AD9249205FF">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUST_PHONE" id="EF403EF1-ECD8-3941-A34C-1C2E7B57984B">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UQ_CUST_PHONE" id="CF65129E-22E9-4417-97AD-B57AAABCFCCD">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<schemaObject>C272C8B6-72DB-90A0-4146-2A43BA514311</schemaObject>
+<segment>500FF2EF-BE1C-D320-C36B-59B6EAC6F755</segment>
+<tableSpace>5CF1D772-B2AD-4B5F-B3DA-45E8EDE8C0DE</tableSpace>
+</IndexProxy>
+</indexProxies>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_CUST_PHONE" id="D36F6DAD-FDB5-AA1E-2523-94203994FBE5">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<segment>500FF2EF-BE1C-D320-C36B-59B6EAC6F755</segment>
+<tableSpace>5CF1D772-B2AD-4B5F-B3DA-45E8EDE8C0DE</tableSpace>
+<existingIndex>CF65129E-22E9-4417-97AD-B57AAABCFCCD</existingIndex>
+<indexSegment>500FF2EF-BE1C-D320-C36B-59B6EAC6F755</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

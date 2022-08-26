@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B916076C-02FE-5F85-AF03-1AAD40550508" containerWithKeyObject="25EC82AB-EC0C-7E9C-EB4E-D19CEB91516F" localFKIndex="16711EC1-0692-5CDE-15F5-9F74E01B9F51" name="FK_PLAYER_NATION">
+<createdBy>GDJ54</createdBy>
+<createdTime>2022-08-25 01:53:01 UTC</createdTime>
+<ownerDesignName>2022-08-25</ownerDesignName>
+<importedID>7CF9C826-68BC-4F0A-3D70-EB07E9D20604</importedID>
+<referredTableLongName>SCOTT.NATION</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>4CA71BBC-9ECD-01F4-E5D7-D9A653CBB47D</referredTableID>
+<keyObject>215165A6-5238-7176-90BB-764058C776E7</keyObject>
+<referredKeyID>215165A6-5238-7176-90BB-764058C776E7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>N_CODE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
