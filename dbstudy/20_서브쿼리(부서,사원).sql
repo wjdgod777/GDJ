@@ -227,7 +227,6 @@ SELECT E.EMP_NO, E.NAME, E.DEPART, D.DEPT_NAME
  WHERE D.LOCATION IN(SELECT LOCATION
                        FROM DEPARTMENT
                       WHERE DEPT_NO = 1);  -- 기본키의 동등비교는 단일행으로만 표시
-                      
 
 -- 스칼라 서브쿼리 접근
 
