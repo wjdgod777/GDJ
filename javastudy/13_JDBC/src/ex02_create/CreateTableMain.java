@@ -13,9 +13,9 @@ public class CreateTableMain {
 		Connection con = null;
 		try {
 			Class.forName("oracle.jdbc.OracleDriver");
-			String url = "jdbc:oracle:thin:@localhost:1521:xe";  // DB마다 url은 달라짐(Oracle XE 버전 기준)
-			String user = "SCOTT";  // 대소문자 상관 없음
-			String password = "TIGER";  // 계정 만들 때 사용한 대소문자를 지켜야 함
+			String url = "jdbc:oracle:thin:@localhost:1521:xe";
+			String user = "SCOTT";
+			String password = "TIGER";
 			con = DriverManager.getConnection(url, user, password);
 		} catch(ClassNotFoundException e) {
 			System.out.println("OracleDriver 로드 실패");
