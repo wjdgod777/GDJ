@@ -216,87 +216,132 @@
             <button>전송</button>
         </fieldset>
     </form>
+    
+    <!-- 네이버 검색창 -->
+    <form action="https://search.naver.com/search.naver" method="get">
+        <!-- hidden -->
+        <input type="hidden" name="where" value="nexearch">
+        <input type="hidden" name="sm" value="top_hty">
+        <input type="hidden" name="fbm" value="0">
+        <input type="hidden" name="ie" value="utf8">
+        <!-- 검색창 -->
+        <input type="text" name="query">
+        <button>검색</button>
+    </form>
 
+    <!-- 다음 검색창 -->
+    <form action="https://search.daum.net/search" method="get">
+        <!-- hidden -->
+        <input type="hidden" name="w" value="tot">
+        <input type="hidden" name="DA" value="YZR">
+        <input type="hidden" name="t__nil_searchbox" value="btn">
+        <!-- 검색창 -->
+        <input type="text" name="q">
+        <button>검색</button>
+    </form>
+
+    <h1>연습문제-1</h1>
     <form>
-        아이디<br>
-        <input type="text"     placeholder="                                       @naver.com" size="30" required><br>
-        비밀번호<br>
-        <input type="password" placeholder="특수문자,영문자,숫자 포함 8~16자리" size="30" required><br>
-        비밀번호 확인<br>
-        <input type="password" placeholder="특수문자,영문자,숫자 포함 8~16자리" size="30" required><br>
-        이름<br>
-        <input type="text"     placeholder="" size="30" required><br>
-        생년월일<br>
-        <input type="text"     placeholder="년(4자)" size="5" required>
+        <input type="text" placeholder="example@naver.com">
+        <input type="text" placeholder="비밀번호">
+        <button>로그인</button>
+    </form>
+
+    <h1>연습문제-2</h1>
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td><input type="text" placeholder="아이디"></td>
+                    <td rowspan="2"><button>로그인</button></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="비밀번호"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <h1>연습문제-3</h1>
+    <form >
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">개인 정보 작성</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="text" size="20"><br></td>
+                </tr>
+                <tr>
+                    <td>메일 주소</td>
+                    <td><input type="text" size="20"><br></td>
+                </tr>
+                <tr>
+                    <td>연락처</td>
+                    <td><input type="text" size="20"><br></td>
+                </tr>
+                <tr>
+                    <td>블로그/홈페이지</td>
+                    <td><input type="text" size="20"><br></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><button>제출하기</button><button>다시작성</button></th>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <h1>연습문제-4</h1>
+    <form>
+        <a href="https://www.naver.com">
+            <img alt="네이버로고" src="../../images/naver.png" width="150">
+        </a><br>
+        <label class="labelss" for="userId"><strong>아이디</strong></label><br>
+        <input class="inputss" type="text" name="userId" id="userId" ><br><br>
+        <strong>비밀번호</strong><br>
+        <input type="password" size="20" required><br><br>
+        <strong>비밀번호 재확인</strong><br>
+        <input type="password" size="20" required><br><br>
+        <strong>이름</strong><br>
+        <input type="text"     placeholder="" size="20" required><br><br>
+        <strong>생년월일</strong><br>
+        <input type="text"     placeholder="년(4자)" size="4" required>
         <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
+            <option value="none">월</option>
+            <option value="1월">1</option>
+            <option value="2월">2</option>
+            <option value="3월">3</option>
+            <option value="4월">4</option>
+            <option value="5월">5</option>
+            <option value="6월">6</option>
+            <option value="7월">7</option>
+            <option value="8월">8</option>
+            <option value="9월">9</option>
+            <option value="10월">10</option>
+            <option value="11월">11</option>
+            <option value="12월">12</option>
         </select>
+        <input type="text" placeholder="일" size="4"><br><br>
+        <strong>성별</strong><br>
         <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-            <option>13</option>
-            <option>14</option>
-            <option>15</option>
-            <option>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-            <option>20</option>
-            <option>21</option>
-            <option>22</option>
-            <option>23</option>
-            <option>24</option>
-            <option>25</option>
-            <option>26</option>
-            <option>27</option>
-            <option>28</option>
-            <option>29</option>
-            <option>30</option>
-            <option>31</option>
-        </select><br>
-        성별<br>
-        <select>
-            <option>선택안함</option>
+            <option>성별</option>
             <option>남성</option>
             <option>여성</option>
-        </select><br>
-        본인 확인 이메일(선택)<br>
-        <input type="email"    placeholder="이메일"><br>
-        휴대전화<br>
+            <option>선택안함</option>
+        </select><br><br>
+        <strong>본인 확인 이메일</strong><span style="font-size: 12px; color: gray;">(선택)</span><br>
+        <input type="email" placeholder="선택입력"><br><br>
+        <strong>휴대전화</strong><br>
         <select>
-            <option value="">선택안함</option>
-            <option value="010" selected>010</option>
-            <option value="02">02</option>
-            <option value="031">031</option>
-            <option value="032">032</option>
-        </select>
-        -
-        <input name="tel" type="text" maxlength="4" size="4">
-        -
-        <input name="tel" type="text" maxlength="4" size="4"><button>인증코드</button><br>
-        <input type="text"     placeholder="인증코드 적기" size="30" required><br>
+            <option value="010">대한민국 +82</option>
+        </select><br>
+        <input type="text" placeholder="전화번호 입력" size="10"><button>인증번호 받기</button><br>
+        <input type="text" placeholder="인증번호 입력하세요" size="20" required><br><br>
         <button>가입하기</button>
     </form>
+
   </body>
 </html>
