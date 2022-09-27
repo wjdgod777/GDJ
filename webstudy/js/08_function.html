@@ -160,7 +160,7 @@
             // greet에 값이 전달되었다면 greet은 undefined가 아니므로 true로 처리됨
             // ㄴ>greet이 true이면 논리 OR(||)은 true이므로 (greet = '안녕')을 처리하지 않음
             // greet에 값이 전달되지 않는다면 greet은 undefined이므로 false로 처리됨
-            // ㄴ> greet이 true이면 논리OR(||)은 계속 수행되므로 (greet = '안녕')을 처리함
+            // ㄴ> greet이 false이면 논리OR(||)은 계속 수행되므로 (greet = '안녕')을 처리함
             greet || (greet = '안녕');
             console.log(greet, name);
             
@@ -170,7 +170,7 @@
 
         // 함수 호출
         func6('이정행');  // 안녕 이정행 (기본 인사로 안녕이 사용됨)
-        func6('이정행', 'hello');  // hello 민경태(전달된 인사가 사용됨)
+        func6('이정행', 'hello');  // hello 이정행(전달된 인사가 사용됨)
 
         // 함수 정의 (arguments 객체)
         function func7() {
