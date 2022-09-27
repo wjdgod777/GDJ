@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <script>
-
-        /*
+      /*
             DOM
 
             1. Document Obecjt Model(문서 객체 모델)
@@ -34,92 +32,94 @@
                         ② 속성 변경하기 : setAttribute('속성', '값')
 
         */
-
     </script>
 
     <h1 id="hello">Hello World</h1>
     <script>
-        // 1. 아이디로 인식하면 변수로 가지고 옴
-        var a = document.getElementById('hello');
-        console.log(a);
-        // 2. 태그로 인식하면 배열로 가지고 옴
-        var b = document.getElementsByTagName('h1');
-        console.log(b);
+      // 1. 아이디로 인식하면 변수로 가지고 옴
+      var a = document.getElementById("hello");
+      console.log(a);
+      // 2. 태그로 인식하면 배열로 가지고 옴
+      var b = document.getElementsByTagName("h1");
+      console.log(b);
     </script>
 
     <h1 id="hi">Hi World</h1>
     <script>
-        // 문서 객체
-        var a = document.getElementById('hi');
-        // 문서 객체 속성
-        console.log(a.id);                  // 속성의 직접 호출
-        console.log(a.getAttribute('id'));  // getter를 이용한 호출
-        // 문서 객체 속성 변경하기(조작)
-        a.id = 'heeheehee';                 // 속성의 직접 호출
-        a.setAttribute('id', 'hihihi');     // setter를 이용한 호출
+      // 문서 객체
+      var a = document.getElementById("hi");
+      // 문서 객체 속성
+      console.log(a.id); // 속성의 직접 호출
+      console.log(a.getAttribute("id")); // getter를 이용한 호출
+      // 문서 객체 속성 변경하기(조작)
+      a.id = "heeheehee"; // 속성의 직접 호출
+      a.setAttribute("id", "hihihi"); // setter를 이용한 호출
     </script>
 
     <!-- 연습. 네이버로 바꿔서 연결하기 -->
     <div>
-        <a href="https://www.google.com" id="naver">네이버</a>
+      <a href="https://www.google.com" id="naver">네이버</a>
     </div>
     <script>
-        var a = document.getElementById('naver');
-        naver.setAttribute('href', "https://www.naver.com");
+      var a = document.getElementById("naver");
+      naver.setAttribute("href", "https://www.naver.com");
     </script>
 
     <div id="box1">
-        <h1>Hello World</h1>
+      <h1>Hello World</h1>
     </div>
     <script>
-        var a = document.getElementById('box1');
-        console.log(a.textContent);
-        a.textContent = '안녕 세계';
+      var a = document.getElementById("box1");
+      console.log(a.textContent);
+      a.textContent = "안녕 세계";
     </script>
 
     <div id="box2">
-        <h1>Hello World</h1>
+      <h1>Hello World</h1>
     </div>
     <script>
-        var a = document.getElementById('box2');
-        console.log(a.innerHTML);
-        //a.innerHTML = '<h3>안녕 세계</h3>';    <div id="box2"><h3>안녕 세계</h3></div>
-        a.innerHTML += '<h3>안녕 세계</h3>';  // <div id="box2"><h1>Hello World</h1></div><div id=box2><h3>안녕 세계</h3></div>
+      var a = document.getElementById("box2");
+      console.log(a.innerHTML);
+      //a.innerHTML = '<h3>안녕 세계</h3>';    <div id="box2"><h3>안녕 세계</h3></div>
+      a.innerHTML += "<h3>안녕 세계</h3>"; // <div id="box2"><h1>Hello World</h1></div><div id=box2><h3>안녕 세계</h3></div>
     </script>
 
     <!-- 연습. 구글로 이동하는 구글 로고 이미지 넣기 -->
     <a id="google"></a>
     <script>
-        var a = document.getElementById('google');
-        a.href = 'https://www.google.com';  // <a id = "google" href = "https://www.google.com"></a>
-        a.textContent = '구글';             // <a id = "google" href = "https://www.google.com">구글</a>
-        a.innerHTML += '<img alt = "구글로고" src ="../../images/google.png" width="200px">';
+      var a = document.getElementById("google");
+      a.href = "https://www.google.com"; // <a id = "google" href = "https://www.google.com"></a>
+      a.textContent = "구글"; // <a id = "google" href = "https://www.google.com">구글</a>
+      a.innerHTML +=
+        '<img alt = "구글로고" src ="../../images/google.png" width="200px">';
     </script>
 
     <!-- 연습. 'JS' 목록으로 추가하기 -->
     <ul id="front">
-        <li>HTML</li>
-        <li>CSS</li>
+      <li>HTML</li>
+      <li>CSS</li>
     </ul>
     <script>
-        var a = document.getElementById('front');
-        a.innerHTML += '<li>JS</li>';  // innerHTML 태그 뒤에 추가
+      var a = document.getElementById("front");
+      a.innerHTML += "<li>JS</li>"; // innerHTML 태그 뒤에 추가
     </script>
 
     <!-- 연습. 봄, 여름, 가을, 겨울 목록 만들기 -->
     <ul id="season"></ul>
     <script>
-        document.getElementById('season').innerHTML = '<li>봄</li><li>여름</li><li>가을</li><li>겨울</li>';
+      document.getElementById("season").innerHTML =
+        "<li>봄</li><li>여름</li><li>가을</li><li>겨울</li>";
     </script>
 
     <div class="primary" id="area">텍스트영역</div>
     <script>
-        // 모든 속성 확인하기
-        // 속성
-        //      1. HTML 태그 관점 : attribute
-        //      2. DOM 관점       : property
-        // 개발자도구 - Elements - Properties
+      // 모든 속성 확인하기
+      // 속성
+      //      1. HTML 태그 관점 : attribute
+      //      2. DOM 관점       : property
+      // 개발자도구 - Elements - Properties
+      document.getElementById("area").className = "hahaha";
+      document.getElementById("area").setAttribute("class", "hi");
     </script>
-
-</body>
+  </body>
 </html>
