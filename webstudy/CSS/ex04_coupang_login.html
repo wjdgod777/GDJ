@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .member-wrapper {
+            margin: 0 auto;
+            min-width: 290px;
+            max-width: 460px;
+            padding: 0 4.35%;
+        }
+        .member-header {
+            width: 100%;
+            position: relative;
+        }
+        .member-logo {
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 10.27%;
+        }
+        .member-logo-link {
+            display: block;
+            width: 43.83%;
+            max-width: 195px;
+            max-height: 46px;
+            padding-top: 10%;
+            margin: 0 auto;
+            background-image: url(https://static.coupangcdn.com/image/static/login/logo-coupang.x2.20201201.png);
+            background-size: cover;
+        }
+        .member-main {
+            width: 100%;
+        }
+        .member-join {
+            width: 100%;
+        }
+        .section-title {
+            padding: 20px 0 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.29;
+            color: #111;
+        }
+        .join-content {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .section-body {
+            width: 100%;
+        }
+        .member-field-wrap {
+            width: 100%;
+            margin-top: 2.9%;
+        }
+        .member-input-field {
+            width: 100%;
+        }
+        .member-input-wrap {
+            display: block;
+            height: 48px;
+            padding: 0;
+            border: 1px solid #CCC;
+            background-color: #FFF;
+        }
+        .member-input-group-icon-label {
+            position: relative;
+            float: left;
+            min-width: 44px;
+            height: 100%;
+            border-right: 1px solid #CCC;
+            background-color: #FAFAFA;
+        }
+        .join-sprite {
+            background-image: url("//img1a.coupangcdn.com/image/static/login/sprite-join.20160902.svg");
+            background-repeat: no-repeat;
+            background-size: 86px 86px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 20px;  /* 잘리는 아이콘이 있어 높게 조정하였음 */
+            width: 1px;
+            margin: -8px 0 0 -10px;
+            padding-left: 19px;
+        }
+        .join-sprite-email {
+            background-position: -1px -1px;
+        }
+        .join-sprite-password {
+            background-position: -22px -1px;
+        }
+        .join-sprite-password-confirm {
+            background-position: -43px -1px;
+        }
+        .join-sprite-name {
+            background-position: -1px -22px;
+        }
+        .join-sprite-phone {
+            background-position: -22px -22px;
+        }
+        .member-input-group {
+            display: block;
+            margin: 0;
+        }
+        .member-input {
+            box-sizing: border-box;
+            width: 80%;
+            height: 48px;
+            margin: 0;
+            padding: 16px 0 12px;
+            font-size: 14px;
+            line-height: 20px;
+            text-indent: 12px;
+            border: none;
+            outline: none;
+        }
+        /* 여기서부터 추가된 내용 */
+        .jointerms {
+            width: 100%;
+        }
+        .g-terms-checkbox {
+            border-top: 1px solid #f1f4f6;
+            color: #111;
+        }
+        .g-terms-checkbox * {
+            box-sizing: border-box;
+        }
+        .g-terms-checkbox > .checkall {
+            margin-bottom: 8px;
+        }
+        .g-terms-checkbox > .checkall-first {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="member-wrapper">
+        <header class="member-header">
+            <h1 class="member-logo">
+                <a href="http://www.coupang.com" class="member-logo-link">
+
+                </a>
+            </h1>
+        </header>
+        <div class="member-main">
+            <div class="member-join">
+                <div class="section-title">
+                    회원정보를 입력해주세요
+                </div>
+                <div class="join-content">
+                    <div class="section-body">
+                        <div class="member-field-wrap">
+                            <div class="member-input-field">
+                                <label class="member-input-wrap" for="join-email-input">
+                                    <span class="member-input-group-icon-label">
+                                        <i class="join-sprite join-sprite-email"></i>
+                                    </span>
+                                    <span class="member-input-group">
+                                        <input type="email" id="join-email-input" class="member-input" maxlength="80" placeholder="아이디(이메일)">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="member-field-wrap">
+                            <div class="member-input-field">
+                                <label class="member-input-wrap" for="join-password-input">
+                                    <span class="member-input-group-icon-label">
+                                        <i class="join-sprite join-sprite-password"></i>
+                                    </span>
+                                    <span class="member-input-group">
+                                        <input type="password" id="join-password-input" class="member-input" maxlength="20" placeholder="비밀번호">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="member-field-wrap">
+                            <div class="member-input-field">
+                                <label class="member-input-wrap" for="join-password-again-input">
+                                    <span class="member-input-group-icon-label">
+                                        <i class="join-sprite join-sprite-password-confirm"></i>
+                                    </span>
+                                    <span class="member-input-group">
+                                        <input type="password" id="join-password-again-input" class="member-input" maxlength="20" placeholder="비밀번호 확인">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="member-field-wrap">
+                            <div class="member-input-field">
+                                <label class="member-input-wrap" for="join-name-input">
+                                    <span class="member-input-group-icon-label">
+                                        <i class="join-sprite join-sprite-name"></i>
+                                    </span>
+                                    <span class="member-input-group">
+                                        <input type="text" id="join-name-input" class="member-input" maxlength="40" placeholder="이름">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="member-field-wrap">
+                            <div class="member-input-field">
+                                <label class="member-input-wrap" for="join-phone-input">
+                                    <span class="member-input-group-icon-label">
+                                        <i class="join-sprite join-sprite-phone"></i>
+                                    </span>
+                                    <span class="member-input-group">
+                                        <input type="text" id="join-phone-input" class="member-input" maxlength="80" placeholder="아이디(이메일)">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 여기서부터 추가된 내용 -->
+                <div class="jointerms">
+                    <div class="g-terms-checkbox">
+                        <div class="checkall checkall-first">
+                            <div class="c-checkbox-item">
+                                <div class="wrapper">
+                                    <input type="checkbox" id="chk_checkall">
+                                    <label for="chk_checkall">
+                                        <i class="icon icon-chk"></i>
+                                        <span>모두 확인하였으며 동의합니다.</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <span class="message">
+                                동의에는 필수 및 선택 목적(광고성 정보 수신 포함)에 대한 동의가 포함되어 있으며, 선택 목적의 동의를 거부하시는 경우에도 서비스 이용이 가능합니다.
+                            </span>
+                        </div>
+                    </div>
+                </div>  <!-- jointerms -->
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
