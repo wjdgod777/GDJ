@@ -94,10 +94,13 @@
 
     <script>
 
-        var a;  // 초기화가 없으면 undefined상태
+        a = 10;    // 변수 선언 키워드(var) 생략 가능
         console.log(a);
-        
-        var b = 1;  // 호이스팅(항상 먼저 처리되는 코드)
+
+        a = null;  // 강제로 저장된 값을 없앰
+        console.log(a);
+
+        var b;     // 초기화가 없으면 undefined 상태
         console.log(b);
 
         var c = 10;  // 10을 저장하면서 number 타입을 가짐
