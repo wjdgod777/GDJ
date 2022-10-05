@@ -70,7 +70,7 @@
             document.getElementById('minute').textContent = appendZero(minute);
             document.getElementById('second').textContent = appendZero(second);
             document.getElementById('ampm').textContent = hour < 12 ? 'AM' : 'PM';
-            if(second >= 20) {
+            if(second >= 50) {
                 document.getElementById('second').className = 'over50';
             } else {
                 document.getElementById('second').className = '';

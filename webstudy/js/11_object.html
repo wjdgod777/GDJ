@@ -181,6 +181,7 @@
         // 생성자 함수 정의
         function Korean(name) {
             this.name = name;
+            // 내부에서 prototype 추가하는 방법
             this.__proto__.country = "Korea";
             this.__proto__.slogan = function() {
                 console.log('8282');

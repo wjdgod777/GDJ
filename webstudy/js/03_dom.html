@@ -61,8 +61,8 @@
       <a href="https://www.google.com" id="naver">네이버</a>
     </div>
     <script>
-      var a = document.getElementById("naver");
-      naver.setAttribute("href", "https://www.naver.com");
+      var a = document.getElementById('naver');
+      a.href = 'https://www.naver.com';
     </script>
 
     <div id="box1">
@@ -90,8 +90,7 @@
       var a = document.getElementById("google");
       a.href = "https://www.google.com"; // <a id = "google" href = "https://www.google.com"></a>
       a.textContent = "구글"; // <a id = "google" href = "https://www.google.com">구글</a>
-      a.innerHTML +=
-        '<img alt = "구글로고" src ="../../images/google.png" width="200px">';
+      a.innerHTML += '<img alt = "구글로고" src ="../../images/google.png" width="200px">';
     </script>
 
     <!-- 연습. 'JS' 목록으로 추가하기 -->
