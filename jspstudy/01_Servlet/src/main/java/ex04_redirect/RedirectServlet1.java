@@ -1,8 +1,6 @@
-package ex04;
+package ex04_redirect;
 
 import java.io.IOException;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,18 +8,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/ForwardServlet1")
+@WebServlet("/RedirectServlet1")
 
 
-public class ForwardServlet1 extends HttpServlet {
+public class RedirectServlet1 extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
-       
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		// Forward
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/ForwardServlet2");
-		requestDispatcher.forward(request, response);
+		// redirect 하는 방법
+		response.sendRedirect("/01_Servlet/RedirectServlet2");
 		
 	}
 

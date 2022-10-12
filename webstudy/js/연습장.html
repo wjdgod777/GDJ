@@ -8,16 +8,48 @@
 </head>
 <body>
     
+    <button id="btn" onclick="fn3()">전송</button>
+    <script>
+        // 1. 고전 이벤트 모델
+        function fn1() {
+            alert('전송합니다.');
+        }
+        document.getElementById('btn').onclick = fn1;
+        // document.getElementById('btn').onclick = function() {
+        //     fn1();
+        // }
+            
+        // 2. 표준 이벤트 모델
+        function fn2() {
+            alert('전송합니다.');
+        }
+        document.getElementById('btn').addEventListener('click', fn2);
+        // document.getElementById('btn').addEventListener('click', function() {
+        //     fn2();
+        // });
+
+        // 3. 인라인 이벤트 모델
+        function fn3() {
+            alert('전송합니다.');
+        }
+    </script>
+
+    <button id="to_site">이동</button>
+    <script>
+        document.getElementById('to_site').onclick = function(event) {
+            location.href = 'http://www.google.com';
+        }
+    </script>
+
     <form id="frm" action="https://search.naver.com/search.naver">
         <input type="text" name="query" id="query">
-        <input type="submit" value="네이버검색" id="btn">
+        <input type="button" value="네이버검색" id="btn">
     </form>
     <script>
         document.getElementById('btn').onclick = function(event) {
             alert('검색어는 ' + document.getElementById('query').value + '입니다.');
         }
     </script>
-
 
 </body>
 </html>
