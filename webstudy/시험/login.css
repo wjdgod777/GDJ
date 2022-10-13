@@ -6,7 +6,7 @@
 }
 a {
     text-decoration: none;
-    counter-reset: #000000;
+    color: #000000;
 }
 .container {
     width: 460px;
