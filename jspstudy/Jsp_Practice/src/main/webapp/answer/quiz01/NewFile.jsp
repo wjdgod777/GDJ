@@ -8,7 +8,10 @@
 </head>
 <body>
 
-
-
+	<select>
+		<option value="https://www.google.com">구글</option>
+	</select>
+	<button>확인</button>
+	
 </body>
 </html>

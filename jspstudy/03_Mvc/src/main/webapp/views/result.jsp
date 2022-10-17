@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+	<h1>${result}입니다.</h1>
 
 </body>
 </html>
