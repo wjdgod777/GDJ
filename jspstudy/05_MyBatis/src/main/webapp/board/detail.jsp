@@ -6,22 +6,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>${board.board_no}번 게시글</title>
+<title>${board.boardNo}번 게시글</title>
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 <script>
 
 	$(document).ready(function() {
 		
 		$('#btn_edit').click(function(event) {
-			location.href = '${contextPath}/board/edit.do?board_no=${board.board_no}';
+			location.href = '${contextPath}/board/edit.do?boardNo=${board.boardNo}';
 		});
 		
 		$('#btn_remove').click(function(event) {
-			if(confirm('삭제하시려면 "확인", 취소하시려면 "취소"를 누르세요.')) {
-				alert('삭제가 완료되었습니다.')
-				location.href = '${contextPath}/board/remove.do?board_no=${board.board_no}';
+			if(confirm('게시글을 삭제할까요?')) {
+				location.href = '${contextPath}/board/remove.do?boardNo=${board.boardNo}';
 			} else {
-				alert('취소되었습니다.');
+				alert('삭제가 취소되었습니다.');
 			}
 		});
 		
@@ -34,25 +33,17 @@
 </script>
 </head>
 <body>
-
-	<h1>게시글 상세 보기</h1>
-	<div>
-		게시글 번호 : ${board.board_no}
-	</div>
-	<div>
-		게시글 제목 : ${board.title}
-	</div>
-	<div>
-		<pre>${board.content}</pre>
-	</div>
-	<div>
-		작성일자 : ${board.create_date}
-	</div>
+	
+	<h1>${board.title}</h1>
+	<pre>${board.content}</pre>
+	<div>${board.createDate}</div>
+	
+	<hr>
 	<div>
 		<input type="button" value="편집" id="btn_edit">
 		<input type="button" value="삭제" id="btn_remove">
 		<input type="button" value="목록" id="btn_list">
 	</div>
-
+	
 </body>
 </html>

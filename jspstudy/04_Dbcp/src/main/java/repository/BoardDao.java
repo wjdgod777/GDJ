@@ -29,7 +29,7 @@ public class BoardDao {
 	private BoardDao() {
 		try {
 			// DataSource 객체 생성
-			// context.xml에서 name="jdbc/oracle11g"인 Resource를 찾아서 생성
+			// context.xml에서 name="jdbc/oracle11g"인 Resource를 찾아서 생성(JNDI)
 			Context ctx = new InitialContext();
 			Context envCtx = (Context)ctx.lookup("java:comp/env");
 			dataSource = (DataSource)envCtx.lookup("jdbc/oracle11g");
@@ -44,7 +44,7 @@ public class BoardDao {
 	
 	// method
 	
-	// 1. 접속 해제
+	// 1. 접속/자원 해제
 	public void close(Connection con, PreparedStatement ps, ResultSet rs) {
 		try {
 			if(rs != null) { rs.close(); }
@@ -59,9 +59,9 @@ public class BoardDao {
 	public List<Board> selectAllBoards() {
 		List<Board> boards = new ArrayList<Board>();
 		try {
-			con = dataSource.getConnection();  // Connection Pool로부터 Connection 대여
+			con = dataSource.getConnection();  // CP로부터 Connection 대여
 			sql = "SELECT BOARD_NO, TITLE, CONTENT, CREATE_DATE FROM BOARD ORDER BY BOARD_NO DESC";
-			ps = con.prepareStatement(sql);  // statement만 쓰는 블로그같은 글 참고하지마세요 !!
+			ps = con.prepareStatement(sql);
 			rs = ps.executeQuery();  // SELECT문은 executeQuery() 사용
 			while(rs.next()) {  // 목록보기는 while문
 				// Board board는 한 개의 게시글을 의미함
@@ -73,7 +73,7 @@ public class BoardDao {
 				// 가져온 게시글을 리스트에 추가함
 				boards.add(board);
 			}
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			close(con, ps, rs);
@@ -88,7 +88,7 @@ public class BoardDao {
 			con = dataSource.getConnection();
 			sql = "SELECT BOARD_NO, TITLE, CONTENT, CREATE_DATE FROM BOARD WHERE BOARD_NO = ?";
 			ps = con.prepareStatement(sql);
-			ps.setInt(1, board_no);  // 1번쨰 물음표(?)에 board_no 전달하기
+			ps.setInt(1, board_no);  // 1번째 물음표(?)에 board_no 전달하기
 			rs = ps.executeQuery();  // SELECT문은 executeQuery() 사용
 			if(rs.next()) {          // 상세보기는 if문
 				board = new Board();
@@ -97,7 +97,7 @@ public class BoardDao {
 				board.setContent( rs.getString(3) );    // rs.getString("CONTENT")
 				board.setCreate_date( rs.getDate(4) );  // rs.getDate("CREATE_DATE")
 			}
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			close(con, ps, rs);
@@ -115,7 +115,7 @@ public class BoardDao {
 			ps.setString(1, board.getTitle());
 			ps.setString(2, board.getContent());
 			result = ps.executeUpdate();  // INSERT문은 executeUpdate() 메소드 사용
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			close(con, ps, null);
@@ -129,28 +129,11 @@ public class BoardDao {
 		try {
 			con = dataSource.getConnection();
 			sql = "UPDATE BOARD SET TITLE = ?, CONTENT = ? WHERE BOARD_NO = ?";
-			ps= con.prepareStatement(sql);
+			ps = con.prepareStatement(sql);
 			ps.setString(1, board.getTitle());
 			ps.setString(2, board.getContent());
 			ps.setInt(3, board.getBoard_no());
 			result = ps.executeUpdate();  // UPDATE문은 executeUpdate() 메소드 사용
-		} catch(Exception e) {
-			e.printStackTrace();
-		} finally {
-			close(con, ps, null);
-		}
-		return result;
-	}
-	
-	// 6. 게시글 삭제
-	public int deleteBoard(Board board) {
-		int result = 0;
-		try {
-			con = dataSource.getConnection();
-			sql = "DELETE FROM BOARD WHERE BOARD_NO = ?";
-			ps = con.prepareStatement(sql);
-			ps.setInt(1, board.getBoard_no());
-			result = ps.executeUpdate();  // DELETE문은 executeUpdate() 메소드 사용
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -159,5 +142,21 @@ public class BoardDao {
 		return result;
 	}
 	
+	// 6. 게시글 삭제
+	public int deleteBoard(int board_no) {
+		int result = 0;
+		try {
+			con = dataSource.getConnection();
+			sql = "DELETE FROM BOARD WHERE BOARD_NO = ?";
+			ps = con.prepareStatement(sql);
+			ps.setInt(1, board_no);
+			result = ps.executeUpdate();  // DELETE문은 executeUpdate() 메소드 사용
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close(con, ps, null);
+		}
+		return result;
+	}
 	
 }

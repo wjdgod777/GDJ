@@ -18,6 +18,18 @@
 		$('#btn_write').click(function(event) {
 			location.href = '${contextPath}/board/write.do'
 		});
+		
+		$('#remove_link').click(function(event) {
+			if(confirm('삭제하려면 "확인", 취소하시려면 "취소"를 누르세요.')) {  // if(confirm(' 삭제할까요? ') == false) {
+				alert('삭제되었습니다.');
+			} else {
+				alert('취소되었습니다.');
+				event.preventDefault();  // <a> 태그의 기본 이벤트는 링크 이동이므로 preventDefault()를 통해서 링크 이동이 막힘
+				return;
+			}
+		});
+	
+		
 	});
 
 </script>
@@ -41,14 +53,14 @@
 					<th>삭제</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody id="my-tbody">
 				<c:forEach items="${boards}" var="board">
 					<tr>
 						<td style="text-align:center">${board.board_no}</td>
 						<td style="text-align:center"><a href="${contextPath}/board/detail.do?board_no=${board.board_no}">${board.title}</a></td>
 						<td style="text-align:center">${board.create_date}</td>
 						<td style="text-align:center">
-							<a href=""><i class="fa-solid fa-x"></i></a>
+						<a id="remove_link" href="${contextPath}/board/remove.do?board_no=${board.board_no}"><i class="fa-solid fa-x"></i></a>
 						</td>
 					</tr>
 				</c:forEach>
