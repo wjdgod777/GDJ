@@ -66,7 +66,7 @@
 	-->
 	<update id="updateBoard" parameterType="Board">
 		UPDATE BOARD
-		   SET TITLE = #{title}, CONTENT = #{content}, CREATE_DATE = SYSDATE
+		   SET TITLE = #{title}, CONTENT = #{content}
 		 WHERE BOARD_NO = #{boardNo}
 	</update>
 

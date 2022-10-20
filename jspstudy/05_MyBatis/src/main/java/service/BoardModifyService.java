@@ -24,14 +24,15 @@ public class BoardModifyService implements BoardService {
 		board.setContent(content);
 		board.setBoardNo(boardNo);
 		
-		// DB로 Board 보내서 수정
+		// DB로 Board board 보내기(수정)
 		int result = BoardDao.getInstance().updateBoard(board);
 		
+		// 수정 성공 / 실패
 		PrintWriter out = response.getWriter();
 		if(result > 0) {
 			out.println("<script>");
 			out.println("alert('게시글이 수정되었습니다.')");
-			out.println("location.href='" + request.getContextPath() + "/board/list.do'");
+			out.println("location.href='" + request.getContextPath() + "/board/detail.do?boardNo=" + boardNo + "'");
 			out.println("</script>");
 		} else {
 			out.println("<script>");
@@ -41,7 +42,7 @@ public class BoardModifyService implements BoardService {
 		}
 		out.close();
 		
-		return null;
+		return null;  // 컨트롤러로 null을 반환하면 컨트롤러는 리다이렉트
 	}
 
 }

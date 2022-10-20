@@ -6,25 +6,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>${board.boardNo}번 게시글 수정</title>
+<title>${board.boardNo}번 게시글 편집 화면</title>
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 <script>
 
 	$(document).ready(function() {
 		
 		$('#frm_edit').submit(function(event) {
-			// 제목, 내용 모두 변경이 없는 경우
-			// 기존 제목, 내용   : ${board.title},    ${board.content}
-			// 입력한 제목, 내용 : $('#title').val(), $('#content').val()
-			if('${board.title}' == $('#title').val() && '${board.content}' == $('#content').val()) {
-				alert('변경된 내용이 없습니다.');
-				event.preventDefault();
-				return;
-			}
-			
-			// 제목이 비어있는 경우
 			if($('#title').val() == '') { 
 				alert('제목은 필수입니다.');
+				$('#title').focus();
 				event.preventDefault();
 				return;
 			}
@@ -40,7 +31,27 @@
 </head>
 <body>
 
-	<h1>게시글 수정 화면</h1>
+	<h1>게시글 편집 화면</h1>
+	<div>
+		<form method="POST" action="${contextPath}/board/modify.do" id="frm_edit">
+			<div>
+				<label for="title">제목</label>
+				<input type="text" name="title" id="title" value="${board.title}">
+			</div>
+			<div>
+				<label for="content">내용</label><br>
+				<textarea name="content" id="content" rows="5" cols="30">${board.content}</textarea>
+			</div>
+			<input type="hidden" name="boardNo" value="${board.boardNo}">
+			<div>
+				<input type="submit" value="수정완료">
+				<input type="reset" value="작성취소">
+				<input type="button" value="목록" id="btn_list">
+			</div>
+		</form>
+	</div>
+	
+	<%-- <h1>게시글 편집 화면</h1>
 	<div>
 		<form method="POST" action="${contextPath}/board/modify.do" id="frm_edit">
 			<div>
@@ -63,7 +74,7 @@
 				<input type="button" value="목록" id="btn_list">
 			</div>
 		</form>
-	</div>
+	</div> --%>
 
 </body>
 </html>
