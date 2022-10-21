@@ -51,7 +51,7 @@
 			~
 			<input type="text" name="end" id="end" size="4" placeholder="end">
 			<input type="button" value="조회" class="btn_primary" id="btn_find">
-			<input type="button" value="전체목록조회" class="btn_primary" id="btn_list">
+			<input type="button" value="전체조회" class="btn_primary" id="btn_list">
 		</div>
 		<div class="main_area">
 			<table>
@@ -85,14 +85,17 @@
 								<td><fmt:formatNumber value="${s.ave}" pattern="0.00" /></td>
 								<td>${s.grade}</td>
 								<td>
-									<input type="button" value="상세" class="btn_primary" id="btn_detail">
+									<input type="button" value="상세" class="btn_primary" onclick="fn_detail(${s.stuNo})">
 									<input type="button" value="삭제" class="btn_primary btn_remove" onclick="fn_remove(${s.stuNo})">
 									<script>
-									function fn_remove(stuNo) {
-										if(confirm('학생 정보를 삭제할까요?')) {
-											location.href = '${contextPath}/student/remove.do?stuNo=' + stuNo;
+										function fn_detail(stuNo) {
+											location.href = '${contextPath}/student/detail.do?stuNo=' + stuNo;
 										}
-									}
+										function fn_remove(stuNo) {
+											if(confirm('학생 정보를 삭제할까요?')) {
+												location.href = '${contextPath}/student/remove.do?stuNo=' + stuNo;
+											}
+										}
 									</script>
 								</td>
 							</tr>

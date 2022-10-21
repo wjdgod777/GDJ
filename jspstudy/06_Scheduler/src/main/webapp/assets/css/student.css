@@ -37,7 +37,9 @@
 	text-align: center;
 	line-height: 50px
 }
-
+.btn_list {
+	width: 80px;	
+}
 .main_area {
 	width: 100%;
 	margin-top: 20px;
@@ -71,3 +73,4 @@
 .btn_remove {
 	background-color: crimson;
 }
+input[value="전체조회"]{width:70px;}
