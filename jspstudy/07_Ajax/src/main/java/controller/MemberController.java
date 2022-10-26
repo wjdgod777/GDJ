@@ -12,6 +12,8 @@ import common.ActionForward;
 import service.MemberAddService;
 import service.MemberDetailService;
 import service.MemberListService;
+import service.MemberModifyService;
+import service.MemberRemoveService;
 import service.MemberService;
 
 @WebServlet("*.do")
@@ -31,7 +33,7 @@ public class MemberController extends HttpServlet {
 		String contextPath = request.getContextPath();
 		String urlMapping = requestURI.substring(contextPath.length());
 		
-		// StudentService 객체
+		// MemberService 객체
 		MemberService service = null;
 		
 		// ActionForward 객체
@@ -50,6 +52,12 @@ public class MemberController extends HttpServlet {
 			break;
 		case "/member/add.do":
 			service = new MemberAddService();
+			break;
+		case "/member/modify.do":
+			service = new MemberModifyService();
+			break;
+		case "/member/remove.do":
+			service = new MemberRemoveService();
 			break;
 		}
 		
