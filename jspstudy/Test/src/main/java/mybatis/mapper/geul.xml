@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mybatis.mapper.geul">
+
+	<select id="selectAllGeuls" resultType="Geul">
+		SELECT GEUL_NO, USERS, TITLE, CONTENT, CREATE_DATE
+		  FROM GEUL
+		 ORDER BY GEUL_NO DESC
+	</select>
+	
+	<select id="selectAllGealsCount" resultType="int">
+		SELECT COUNT(*)
+		  FROM GEUL
+	</select>
+	
+	<insert id="insertGeul" parameterType="Geul">
+		INSERT INTO GEUL
+				(GEUL_NO, USERS, TITLE, CONTENT, CREATE_DATE)
+		VALUES
+				(GEUL_SEQ.NEXTVAL, #{users}, #{title}, #{content}, SYSDATE)
+	</insert>
+	
+	<select id="selectGeulByNo" parameterType="int" resultType="Geul">
+		SELECT GEUL_NO, USERS, TITLE, CONTENT, CREATE_DATE
+		  FROM GEUL
+		 WHERE GEUL_NO = #{geulNo}
+	</select>
+	
+	
+</mapper>
