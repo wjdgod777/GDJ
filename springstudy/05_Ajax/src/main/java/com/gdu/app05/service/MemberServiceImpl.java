@@ -51,10 +51,5 @@ public class MemberServiceImpl implements MemberService {
 		return map;
 		
 	}
-	
-	@Override
-	public Member execute4(Member member) {
-		return member;
-	}
 
 }

@@ -1,8 +1,10 @@
 package com.gdu.app05.service;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class MovieServiceImpl implements MovieService {
@@ -10,40 +12,44 @@ public class MovieServiceImpl implements MovieService {
 	@Override
 	public String getBoxOffice(String targetDt) {
 
-		// API 요청 및 응답
+		// key
 		String key = "d1839876897e6b7217cef63bb0a75a4d";
+		
+		// ApiURL
 		String apiURL = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=" + key + "&targetDt=" + targetDt;
+		
+		// API 요청
+		URL url = null;
+		HttpURLConnection con = null;
 		
 		try {
 			
-			URL url = new URL(apiURL);
-			HttpURLConnection con = (HttpURLConnection)url.openConnection();
-			
-			con.setRequestMethod("GET");
-			
-			BufferedReader
-			reader = null;
-			if(con.getResponseCode() == 200) {  // 200 : HttpURLConnection.HTTP_OK
-				reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
-			} else {
-				reader = new BufferedReader(new InputStreamReader(con.getErrorStream()));
-			}
-			
-			StringBuilder sb = new StringBuilder();
-			String line;
+			url = new URL(apiURL);  // MalformedURLException
+			con = (HttpURLConnection)url.openConnection();  // IOException
+			con.setRequestMethod("GET");  // "GET"을 대문자로 지정
+
+		} catch(MalformedURLException e) {
+			e.printStackTrace();
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+		
+		// API 응답
+		StringBuilder sb = new StringBuilder();
+		try(BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()))) {  // try-catch-resources문은 자원의 close를 생략할 수 있다.
+			String line = null;
 			while((line = reader.readLine()) != null) {
 				sb.append(line);
 			}
-			
-			con.disconnect();
-			
-			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 		
+		// con 닫기
+		con.disconnect();
 		
-		return sb;
+		// 반환 (API로부터 가져온 모든 텍스트 정보)
+		return sb.toString();
 	}
 
 }

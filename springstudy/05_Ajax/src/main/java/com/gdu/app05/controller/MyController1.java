@@ -65,7 +65,6 @@ public class MyController1 {
 		*/
 	}
 	
-	
 	@ResponseBody
 	@GetMapping(value="member/detail3"
 			  , produces=MediaType.APPLICATION_JSON_VALUE)
@@ -74,19 +73,4 @@ public class MyController1 {
 		return map;
 		// return memberService.execute3(member);  <- 웬만하면 한줄로 처리할 것!
 	}
-	
-	
-	/*
-		@RequestBody
-		안녕. 난 요청 데이터가 body에 포함되어 있다고 알려주는 일을 해.
-		요청 파라미터에서는 사용할 수 없고,
-		post 방식으로 파라미터 없이 데이터가 전달될 때 사용할 수 있어.
-	*/
-	@ResponseBody
-	@PostMapping(value="member/detail4"
-			   , produces=MediaType.APPLICATION_JSON_VALUE)
-	public Member detail4(@RequestBody Member member) {
-		return memberService.execute4(member);
-	}
-	
 }
