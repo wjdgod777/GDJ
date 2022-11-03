@@ -4,7 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import com.gdu.app06.domain.BoardDTO;
 import com.gdu.app06.service.BoardService;
 
 @Controller
@@ -25,10 +28,41 @@ public class BoardController {
 		return "board/list";  // board폴더의 list.jsp로 forward
 	}
 	
-	@GetMapping("board/detail")
-	public String detail() {
+	@GetMapping("brd/write")
+	public String write() {
+		return "board/write";  // board 폴더의 write.jsp로 포워드
+	}
+	
+	@PostMapping("brd/add")
+	public String add(BoardDTO board) {
+		boardService.saveBoard(board);  // saveBoard()로부터 0 혹은 1이 반환되지만 처리하지 않았다.
+		return "redirect:/brd/list";
+	}
+	
+	@GetMapping("brd/detail")
+	public String detail(@RequestParam(value="board_no", required=false, defaultValue="0") int board_no
+					   , Model model) {
+		model.addAttribute("board", boardService.findBoardByNo(board_no));
 		return "board/detail";
 	}
 	
+	@PostMapping("brd/edit")
+	public String edit(int board_no
+					 , Model model) {
+		model.addAttribute("board", boardService.findBoardByNo(board_no));
+		return "board/edit";
+	}
+	
+	@PostMapping("brd/modify")
+	public String modify(BoardDTO board) {
+		boardService.modifyBoard(board);  // modifyBoard()로부터 0 혹은 1이 반환되지만 처리하지 않았다.
+		return "redirect:/brd/detail?board_no=" + board.getBoard_no();
+	}
+	
+	@PostMapping("brd/remove")
+	public String remove(int board_no) {
+		boardService.removeBoard(board_no);  // removeBoard()로부터 0 혹은 1이 반환되지만 처리하지 않았다.
+		return "redirect:/brd/list";
+	}
 	
 }
