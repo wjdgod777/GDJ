@@ -19,6 +19,7 @@ import com.gdu.app06.domain.BoardDTO;
 	root-context.xml이나 @Configuration에 @Bean으로 등록하지 않아도 컨테이너에 만들어져.
 */
 @Repository  // DAO가 사용하는 @Component로 트랜잭션 기능이 추가되어 있어.
+			 // 없으면 Impl에서 @Autowired가 인식하지 못해서 오류
 public class BoardDAO {
 	
 	private Connection con;
@@ -41,6 +42,8 @@ public class BoardDAO {
 		return con;
 	}
 	
+	// private 메소드
+	// 이 메소드는 BoardDAO에서만 사용한다.
 	private void close() {
 		
 		try {
