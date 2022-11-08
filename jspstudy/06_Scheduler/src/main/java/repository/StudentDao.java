@@ -61,8 +61,8 @@ public class StudentDao {
 	
 	// 4. 학생 등록
 	public int insertStudent(Student student) {
-		SqlSession ss = factory.openSession();
-		int result = ss.delete(mapper + "insertStudent", student);
+		SqlSession ss = factory.openSession(false);
+		int result = ss.insert(mapper + "insertStudent", student);
 		if(result > 0) {
 			ss.commit();
 		}
